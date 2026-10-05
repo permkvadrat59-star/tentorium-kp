@@ -49,8 +49,6 @@ section{padding:94px 0;border-top:1px solid var(--milk-line);position:relative}
 .h-md{font-size:clamp(24px,2.8vw,34px);font-weight:700;letter-spacing:-.02em;line-height:1.12}
 .lede{font-size:19px;line-height:1.55;color:var(--ink-dim);max-width:62ch;font-weight:400}
 .sm{font-size:14px;color:var(--gray);line-height:1.55}
-.mono{font-family:var(--mono)}
-.tnum{font-variant-numeric:tabular-nums}
 /* cover */
 #cover{padding:46px 0 84px;border-top:none}
 .cov-top{display:flex;align-items:flex-start;justify-content:space-between;gap:30px;
@@ -75,150 +73,8 @@ section{padding:94px 0;border-top:1px solid var(--milk-line);position:relative}
 .two-wide{display:grid;grid-template-columns:1.25fr 1fr;gap:56px;align-items:start}
 .head-blk{margin-bottom:46px}
 .head-blk .lede{margin-top:16px}
-/* zones */
-.zones{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--milk-line);
-  border:1px solid var(--milk-line);margin-top:34px}
-.zone{background:var(--milk);padding:30px 30px 32px}
-.zone.ours{background:var(--graphite);color:var(--milk)}
-.zone h4{font-size:12px;font-family:var(--mono);font-weight:600;letter-spacing:.18em;
-  text-transform:uppercase;margin-bottom:8px;color:var(--mute)}
-.zone.ours h4{color:var(--lime)}
-.zone .big{font-family:var(--display);font-size:25px;font-weight:700;letter-spacing:-.02em;
-  display:block;margin-bottom:20px}
-.zone ul{list-style:none;margin:0;padding:0}
-.zone li{padding:11px 0;border-top:1px solid var(--milk-line);font-size:15px;line-height:1.5;
-  display:flex;gap:12px}
-.zone.ours li{border-color:var(--graphite-line)}
-.zone li:first-child{border-top:none}
-.zone li s{color:var(--mute);text-decoration:none;font-family:var(--mono);font-size:11px;
-  padding-top:3px;min-width:16px}
-/* problem list */
-.probs{list-style:none;margin:34px 0 0;padding:0;border-top:1px solid var(--graphite)}
-.probs li{display:grid;grid-template-columns:54px 1fr 190px;gap:22px;align-items:baseline;
-  padding:17px 0;border-bottom:1px solid var(--milk-line)}
-.probs .n{font-family:var(--mono);font-size:11px;color:var(--mute);letter-spacing:.1em}
-.probs .t{font-size:16.5px;line-height:1.5}
-.probs .t b{font-weight:600}
-.probs .z{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;
-  text-align:right;padding:4px 9px;border-radius:2px;justify-self:end}
-.probs .z.us{background:var(--lime);color:var(--lime-ink)}
-.probs .z.you{background:var(--milk-soft);color:var(--ink-dim);border:1px solid var(--milk-line)}
-/* math callout */
-.math{background:var(--graphite);color:var(--milk);padding:44px 48px 48px;margin-top:38px}
-.math h3{font-size:30px;font-weight:700;color:var(--milk);margin-bottom:8px}
 .math .lede{color:#C9C7BE;max-width:64ch}
-.calc-rows{margin-top:32px;border-top:1px solid var(--graphite-line)}
-.crow{display:grid;grid-template-columns:1fr auto;gap:26px;align-items:baseline;
-  padding:15px 0;border-bottom:1px solid var(--graphite-line);font-size:16px}
-.crow span{color:#C9C7BE}
-.crow b{font-family:var(--mono);font-size:17px;font-weight:500;white-space:nowrap}
-.crow.bad b{color:#F08A6B}
-.crow.good b{color:var(--lime)}
-.verdict{margin-top:30px;padding:22px 26px;background:var(--graphite-soft);
-  border-left:3px solid var(--red);font-size:17px;line-height:1.55;color:#E6E4DC}
-.verdict b{color:#fff}
-/* rule */
-.rule{border:2px solid var(--graphite);padding:40px 44px;margin-top:34px;background:var(--milk)}
-.rule .lbl{font-family:var(--mono);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;
-  color:var(--mute);margin-bottom:16px}
-.rule .f{font-family:var(--display);font-size:clamp(26px,3.6vw,44px);font-weight:800;
-  letter-spacing:-.03em;line-height:1.15}
-.rule .f em{font-style:normal;background:var(--lime);padding:0 .1em}
-.rule p{margin:20px 0 0;font-size:16.5px;color:var(--ink-dim);max-width:70ch}
-/* ladder table */
-.tbl{width:100%;border-collapse:collapse;margin-top:30px;font-size:15px}
-.tbl th{font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.15em;
-  text-transform:uppercase;color:var(--mute);text-align:right;padding:0 14px 12px;
-  border-bottom:1px solid var(--graphite);vertical-align:bottom}
-.tbl th:first-child{text-align:left;padding-left:0}
-.tbl th:last-child{padding-right:0}
-.tbl td{padding:17px 14px;border-bottom:1px solid var(--milk-line);text-align:right;
-  font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
-.tbl td:first-child{text-align:left;padding-left:0;font-family:var(--body);white-space:normal}
-.tbl td:last-child{padding-right:0}
-.tbl .lvl b{font-family:var(--display);font-size:19px;font-weight:700;display:block;letter-spacing:-.01em}
-.tbl .lvl span{font-size:13px;color:var(--gray);display:block;margin-top:3px}
-.tbl .prem{font-weight:600;font-size:16px}
-.tbl tr.zero td{color:var(--gray)}
-.tbl tr.zero .prem{color:var(--gray)}
-.tbl tr:hover td{background:var(--milk-soft)}
-.tbl .win{color:var(--lime-deep);font-weight:600}
-/* calculator */
-.calc{border:1px solid var(--milk-line);background:var(--milk-soft);padding:30px 32px 34px;margin-top:34px}
-.calc h4{font-family:var(--mono);font-size:10.5px;font-weight:600;letter-spacing:.2em;
-  text-transform:uppercase;color:var(--ink-dim);margin-bottom:6px}
-.calc .hint{font-size:13.5px;color:var(--gray);margin-bottom:24px}
-.inputs{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
-.inp label{display:block;font-size:13px;color:var(--ink-dim);margin-bottom:9px;font-weight:500}
-.inp .val{font-family:var(--display);font-size:25px;font-weight:700;letter-spacing:-.02em;
-  margin-bottom:8px;display:flex;align-items:baseline;gap:6px}
-.inp .val u{text-decoration:none;font-family:var(--mono);font-size:12px;font-weight:400;color:var(--gray)}
 input[type=range]{width:100%;accent-color:var(--lime-deep);height:22px;cursor:pointer}
-.payback{margin-top:26px;padding:20px 24px;background:var(--milk);border:1px solid var(--milk-line);
-  display:flex;gap:20px;align-items:baseline;flex-wrap:wrap}
-.payback b{font-family:var(--display);font-size:25px;font-weight:800;letter-spacing:-.02em}
-.payback span{font-size:15.5px;color:var(--ink-dim);line-height:1.5}
-/* scope */
-.stage{display:grid;grid-template-columns:230px 1fr;gap:40px;padding:34px 0;
-  border-top:1px solid var(--milk-line)}
-.stage:first-of-type{border-top:2px solid var(--graphite)}
-.stage .meta b{display:block;font-family:var(--display);font-size:23px;font-weight:700;
-  letter-spacing:-.02em;margin-bottom:8px}
-.stage .meta span{font-family:var(--mono);font-size:11px;letter-spacing:.13em;text-transform:uppercase;
-  color:var(--mute);display:block;line-height:1.9}
-.stage .meta .price{margin-top:14px;font-family:var(--display);font-size:20px;font-weight:700;
-  color:var(--graphite);letter-spacing:-.01em}
-.stage ul{list-style:none;margin:0;padding:0;columns:2;column-gap:36px}
-.stage li{padding:8px 0;font-size:15px;line-height:1.5;break-inside:avoid;
-  display:flex;gap:11px}
-.stage li:before{content:"";width:6px;height:6px;background:var(--lime);margin-top:8px;flex-shrink:0}
-/* options */
-.opts{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:38px}
-.opt{border:1px solid var(--milk-line);background:var(--milk);padding:32px 30px 34px;
-  display:flex;flex-direction:column}
-.opt.pick{border:2px solid var(--graphite);background:var(--graphite);color:var(--milk);position:relative}
-.opt .tag{font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;
-  color:var(--mute);margin-bottom:14px}
-.opt.pick .tag{color:var(--lime)}
-.opt h4{font-size:27px;font-weight:800;letter-spacing:-.025em;margin-bottom:10px}
-.opt .desc{font-size:14.5px;color:var(--gray);line-height:1.5;min-height:66px}
-.opt.pick .desc{color:#C9C7BE}
-.opt .price{font-family:var(--display);font-size:33px;font-weight:800;letter-spacing:-.03em;
-  margin:20px 0 4px;line-height:1.05}
-.opt .pnote{font-family:var(--mono);font-size:11px;color:var(--mute);letter-spacing:.06em;margin-bottom:22px}
-.opt ul{list-style:none;margin:0 0 24px;padding:0;flex:1}
-.opt li{padding:10px 0;border-top:1px solid var(--milk-line);font-size:14.5px;line-height:1.5;
-  display:flex;gap:11px}
-.opt.pick li{border-color:var(--graphite-line)}
-.opt li:first-child{border-top:none}
-.opt li i{font-style:normal;color:var(--lime-deep);font-weight:700;flex-shrink:0}
-.opt.pick li i{color:var(--lime)}
-.opt .tot{font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:var(--mute);
-  padding-top:18px;border-top:1px solid var(--milk-line)}
-.opt.pick .tot{border-color:var(--graphite-line)}
-.opt .tot b{display:block;font-family:var(--display);font-size:17px;font-weight:700;
-  letter-spacing:-.01em;color:var(--graphite);margin-top:6px}
-.opt.pick .tot b{color:var(--lime)}
-/* conditions */
-.cond{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--milk-line);
-  border:1px solid var(--milk-line);margin-top:34px}
-.cond>div{background:var(--milk);padding:30px 30px 32px}
-.cond h4{font-family:var(--mono);font-size:10.5px;font-weight:600;letter-spacing:.18em;
-  text-transform:uppercase;color:var(--mute);margin-bottom:18px}
-.cond ol{margin:0;padding-left:20px;font-size:15px;line-height:1.55}
-.cond li{margin-bottom:11px}
-.cond li b{font-weight:600}
-.stop{background:var(--lime);color:var(--lime-ink);padding:26px 30px;margin-top:22px;
-  font-size:16px;line-height:1.55}
-.stop b{font-weight:700}
-/* forecast */
-.fc{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--milk-line);
-  border:1px solid var(--milk-line);margin-top:34px}
-.fc div{background:var(--milk);padding:26px 24px 28px}
-.fc .p{font-family:var(--mono);font-size:10px;letter-spacing:.15em;text-transform:uppercase;
-  color:var(--mute);display:block;margin-bottom:12px}
-.fc b{font-family:var(--display);font-size:24px;font-weight:800;letter-spacing:-.025em;display:block}
-.fc span{font-size:14px;color:var(--ink-dim);line-height:1.5;display:block;margin-top:9px}
 /* portfolio */
 .port{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--milk-line);
   border:1px solid var(--milk-line);margin-top:34px}
@@ -243,20 +99,6 @@ input[type=range]{width:100%;accent-color:var(--lime-deep);height:22px;cursor:po
 #next{background:var(--graphite);color:var(--milk);border-top:none}
 #next h2{color:var(--milk)}
 #next .lede{color:#C9C7BE}
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--graphite-line);
-  border:1px solid var(--graphite-line);margin-top:40px}
-.steps div{background:var(--graphite);padding:26px 24px 28px}
-.steps .n{font-family:var(--mono);font-size:10px;letter-spacing:.18em;color:var(--lime);
-  display:block;margin-bottom:12px}
-.steps b{font-family:var(--display);font-size:19px;font-weight:700;letter-spacing:-.02em;display:block}
-.steps span{font-size:14px;color:#C9C7BE;line-height:1.5;display:block;margin-top:8px}
-.contacts{display:flex;gap:56px;flex-wrap:wrap;margin-top:48px;padding-top:34px;
-  border-top:1px solid var(--graphite-line)}
-.contacts div b{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.18em;
-  text-transform:uppercase;color:var(--mute);margin-bottom:9px}
-.contacts div span,.contacts div a{font-family:var(--display);font-size:19px;font-weight:600;
-  letter-spacing:-.01em;text-decoration:none;color:var(--milk)}
-.contacts div a:hover{color:var(--lime)}
 #next img{height:28px;margin-top:48px}
 .fine{font-family:var(--mono);font-size:11.5px;line-height:1.85;color:var(--mute);
   margin-top:34px;max-width:96ch}
@@ -267,40 +109,12 @@ footer{padding:30px 0 60px;font-family:var(--mono);font-size:11px;color:var(--mu
 section{padding:66px 0}
 .two,.two-wide,.zones,.cond{grid-template-columns:1fr}
 .cov-strip,.fc,.port{grid-template-columns:1fr 1fr}
-.opts{grid-template-columns:1fr}
-.stage{grid-template-columns:1fr;gap:20px}
-.stage ul{columns:1}
-.inputs{grid-template-columns:1fr}
-.steps{grid-template-columns:1fr 1fr}
-.probs li{grid-template-columns:34px 1fr;gap:12px}
-.probs .z{grid-column:2;justify-self:start;margin-top:6px}
-.tbl{font-size:13px}
-.tbl td,.tbl th{padding:12px 7px}
-.tblwrap{overflow-x:auto}
 }
 @media (prefers-reduced-motion:reduce){
 *{transition:none!important;animation:none!important}
 }
-/* ===== payment flow (модуль 06) ===== */
-.flowpay{display:grid;grid-template-columns:1fr 1.45fr;gap:22px;margin-top:34px}
-.fp{border:1px solid var(--milk-line);padding:28px 30px 30px;display:flex;flex-direction:column}
-.fp.prem{background:var(--graphite);color:var(--milk);border-color:var(--graphite)}
-.fp-tag{font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.18em;
-  text-transform:uppercase;color:var(--mute);margin-bottom:22px;display:block}
-.fp.prem .fp-tag{color:var(--lime)}
-.fp-row{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--milk-line);
-  border:1px solid var(--milk-line);flex:1}
 .fp-row.three{grid-template-columns:repeat(3,1fr);background:var(--graphite-line);
   border-color:var(--graphite-line)}
-.fp-row>div{background:var(--milk);padding:20px 20px 22px}
-.fp.prem .fp-row>div{background:var(--graphite)}
-.fp-row b{display:block;font-family:var(--display);font-size:27px;font-weight:800;
-  letter-spacing:-.03em;line-height:1}
-.fp.prem .fp-row b{color:var(--lime)}
-.fp-row span{display:block;font-size:13.5px;color:var(--ink-dim);line-height:1.5;margin-top:10px}
-.fp.prem .fp-row span{color:#C9C7BE}
-.fp-note{margin:20px 0 0;font-size:14px;line-height:1.55;color:var(--gray);max-width:none}
-.fp.prem .fp-note{color:#9C9A93}
 .totals{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--milk-line);
   border:1px solid var(--milk-line);margin-top:22px}
 .totals>div{background:var(--milk);padding:22px 22px 24px}
@@ -310,42 +124,7 @@ section{padding:66px 0}
 .totals .max{background:var(--lime)}
 .totals .max span{color:var(--lime-ink);opacity:.75}
 .totals .max b{color:var(--lime-ink)}
-/* ===== mandate (модуль 07) ===== */
-.mandate{display:grid;grid-template-columns:1.15fr 1fr 1fr;gap:1px;background:var(--milk-line);
-  border:1px solid var(--milk-line);margin-top:34px}
-.md{background:var(--milk);padding:30px 28px 32px}
-.md.free{background:var(--graphite);color:var(--milk)}
-.md h4{font-family:var(--display);font-size:23px;font-weight:700;letter-spacing:-.02em;margin-bottom:6px}
-.md.free h4{color:var(--lime)}
-.md-sub{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;
-  color:var(--mute);margin:0 0 20px;max-width:none}
-.md ul{list-style:none;margin:0;padding:0}
-.md li{padding:10px 0;border-top:1px solid var(--milk-line);font-size:14.5px;line-height:1.45}
-.md.free li{border-color:var(--graphite-line)}
-.md li:first-child{border-top:none}
-.md.gate li:before,.md.need li:before{content:"";display:inline-block;width:5px;height:5px;
-  background:var(--gray);margin-right:10px;vertical-align:middle}
-.md.free li:before{content:"";display:inline-block;width:5px;height:5px;background:var(--lime);
-  margin-right:10px;vertical-align:middle}
-.sla{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--milk-line);
-  border:1px solid var(--milk-line);margin-top:22px}
-.sla>div{background:var(--milk-soft);padding:26px 24px 28px}
-.sla-n{display:block;font-family:var(--display);font-size:26px;font-weight:800;letter-spacing:-.03em;
-  color:var(--lime-deep);margin-bottom:12px}
-.sla b{display:block;font-family:var(--display);font-size:17px;font-weight:700;letter-spacing:-.01em;
-  margin-bottom:8px}
-.sla p{margin:0;font-size:13.5px;line-height:1.5;color:var(--ink-dim);max-width:none}
-/* ===== insurance (модуль 09) ===== */
-.insure{border:2px solid var(--graphite);padding:32px 34px 34px;margin-top:22px}
-.insure h4{font-family:var(--display);font-size:22px;font-weight:700;letter-spacing:-.02em;
-  margin-bottom:22px}
-.ins-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
-.ins-n{display:block;font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.16em;
-  text-transform:uppercase;color:var(--lime-deep);margin-bottom:10px}
-.ins-grid p{margin:0;font-size:14.5px;line-height:1.55;color:var(--ink-dim);max-width:none}
-.ins-grid b{font-weight:600;color:var(--graphite)}
 @media (max-width:980px){
-.flowpay,.mandate,.ins-grid{grid-template-columns:1fr}
 .fp-row,.fp-row.three{grid-template-columns:1fr}
 .totals,.sla{grid-template-columns:1fr 1fr}
 }
@@ -445,10 +224,9 @@ h1,h2,h3,h4{break-after:avoid}
 a{text-decoration:none;color:inherit}
 }
 /* ===== ред. 4: правки ===== */
-.cov-top img{height:30px}
+.cov-top img{height:66px}
 /* знак обрезан вплотную: прежние 102px давали видимые ~29px */
 .cov-strip.three{grid-template-columns:repeat(3,1fr)}
-.stage .meta span:empty{display:none}
 /* контакты — одна сетка, одинаковые ячейки */
 #next{padding:94px 54px}
 /* внутренний отступ тёмной панели */
@@ -492,6 +270,27 @@ section{break-inside:auto}
 h1,h2,h3,h4{break-after:avoid}
 a{text-decoration:none;color:inherit}
 }
+/* фундамент и направления (модуль 04) */
+.found{display:grid;grid-template-columns:190px 1fr;gap:30px;align-items:start;
+  margin-top:34px;padding:30px 34px;background:var(--graphite);color:var(--milk)}
+.f-n{font-family:var(--mono);font-size:10.5px;font-weight:600;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--lime);padding-top:7px}
+.f-tx b{display:block;font-family:var(--display);font-size:26px;font-weight:700;
+  letter-spacing:-.025em;margin-bottom:12px}
+.f-tx p{margin:0;font-size:15.5px;line-height:1.6;color:#C9C7BE;max-width:80ch}
+.dirs{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--milk-line);
+  border:1px solid var(--milk-line);border-top:none}
+.dir{background:var(--milk);padding:28px 26px 30px}
+.d-n{display:block;font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--mute);margin-bottom:14px}
+.dir b{display:block;font-family:var(--display);font-size:22px;font-weight:700;
+  letter-spacing:-.02em;margin-bottom:10px;line-height:1.15}
+.dir p{margin:0 0 .7em;font-size:14.5px;line-height:1.55;color:var(--ink-dim);max-width:none}
+.dir p:last-child{margin-bottom:0}
+.dir.bet{grid-column:1 / -1;background:var(--lime)}
+.dir.bet .d-n{color:var(--lime-ink);opacity:.6}
+.dir.bet b{font-size:28px;color:var(--lime-ink)}
+.dir.bet p{color:var(--lime-ink);font-size:15.5px;max-width:92ch}
 </style>
 
 <div class="wrap">
@@ -506,7 +305,7 @@ a{text-decoration:none;color:inherit}
       Повышение конверсии сайта
     </div>
   </div>
-  <h1 class="h-xl">Вы платите за рост выручки. <em>Не за процесс.</em></h1>
+  <h1 class="h-xl">Вы платите за рост выручки.<br><em>Не за процесс.</em></h1>
   <p class="cov-sub">30 000 ₽ на старте — и дальше только за результат. Мы пересобираем сайт и привлечение самостоятельно, ставим планки по конверсии и получаем оплату, когда планка взята и удержана.</p>
   <div class="cov-strip three">
     <div><b>30 000 ₽</b><span>старт, единственный платёж авансом</span></div>
@@ -515,37 +314,9 @@ a{text-decoration:none;color:inherit}
   </div>
 </section>
 
-<!-- ============ 01 ОТПРАВНАЯ ТОЧКА ============ -->
+<!-- ============ 01 ДЕНЬГИ ============ -->
 <section>
-  <div class="mod"><b>Модуль 01</b><i></i>Отправная точка</div>
-  <div class="two-wide">
-    <div>
-      <h2 class="h-lg">Люди находят сайт<br>и не покупают</h2>
-      <p class="lede" style="margin-top:22px">Трафик есть. Заказов нет. Мы разобрали сайт в сентябре и знаем причину: дело не в дизайне, а в логике. Человек не успевает понять, чем продукт ему полезен, — сайт сразу предлагает купить. Предложение приходит раньше, чем появляется интерес.</p>
-    </div>
-    <div>
-      <p class="sm" style="max-width:none">Что уже сделано и передано вам — бесплатно, до всякого договора:</p>
-      <ul style="list-style:none;padding:0;margin:14px 0 0">
-        <li style="padding:12px 0;border-top:1px solid var(--milk-line);font-size:15px">Технический аудит конверсии: 8 причин, ранжированных по силе влияния</li>
-        <li style="padding:12px 0;border-top:1px solid var(--milk-line);font-size:15px">Рабочий прототип нового сайта на ваших фото, ценах и фактах</li>
-        <li style="padding:12px 0;border-top:1px solid var(--milk-line);font-size:15px">Поблочный разбор логики: что каждый экран должен делать и почему</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="proof">
-    <div class="tx">
-      <h4>Прототип уже можно открыть</h4>
-      <p>Кликабельный подбор продукта, карточка товара, переключатель EN / العربية. Собран на реальном каталоге: цены, фотографии и факты взяты с вашего сайта.</p>
-      <p class="print-only">permkvadrat59-star.github.io/tentorium-uae-concept</p>
-    </div>
-    <a class="btn" href="https://permkvadrat59-star.github.io/tentorium-uae-concept/" target="_blank" rel="noopener">Открыть прототип →</a>
-  </div>
-</section>
-
-<!-- ============ 02 ДЕНЬГИ ============ -->
-<section>
-  <div class="mod"><b>Модуль 02</b><i></i>Как устроены деньги</div>
+  <div class="mod"><b>Модуль 01</b><i></i>Как устроены деньги</div>
   <div class="head-blk">
     <h2 class="h-lg">Планки по конверсии.<br>Взяли и удержали — платите</h2>
     <p class="lede">Мы ставим планку роста выручки сайта и берём оплату за её достижение. Отдельно — за удержание в следующем месяце, потому что разовый всплеск бизнесу ничего не даёт.</p>
@@ -605,6 +376,34 @@ a{text-decoration:none;color:inherit}
   <p class="fine">Курс для расчётов — ЦБ РФ на дату подписания акта, на 26.09.2026 это 22,97 ₽ за дирхам. Точка отсчёта фиксируется в день запуска нового сайта: средняя выручка сайта за три предыдущих месяца. Сегодня она равна нулю.</p>
 </section>
 
+<!-- ============ 02 ОТПРАВНАЯ ТОЧКА ============ -->
+<section>
+  <div class="mod"><b>Модуль 02</b><i></i>Отправная точка</div>
+  <div class="two-wide">
+    <div>
+      <h2 class="h-lg">Люди находят сайт<br>и не покупают</h2>
+      <p class="lede" style="margin-top:22px">Трафик есть. Заказов нет. Мы разобрали сайт в сентябре и знаем причину: дело не в дизайне, а в логике. Человек не успевает понять, чем продукт ему полезен, — сайт сразу предлагает купить. Предложение приходит раньше, чем появляется интерес.</p>
+    </div>
+    <div>
+      <p class="sm" style="max-width:none">Что уже сделано и передано вам — бесплатно, до всякого договора:</p>
+      <ul style="list-style:none;padding:0;margin:14px 0 0">
+        <li style="padding:12px 0;border-top:1px solid var(--milk-line);font-size:15px">Технический аудит конверсии: 8 причин, ранжированных по силе влияния</li>
+        <li style="padding:12px 0;border-top:1px solid var(--milk-line);font-size:15px">Рабочий прототип нового сайта на ваших фото, ценах и фактах</li>
+        <li style="padding:12px 0;border-top:1px solid var(--milk-line);font-size:15px">Поблочный разбор логики: что каждый экран должен делать и почему</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="proof">
+    <div class="tx">
+      <h4>Прототип уже можно открыть</h4>
+      <p>Кликабельный подбор продукта, карточка товара, переключатель EN / العربية. Собран на реальном каталоге: цены, фотографии и факты взяты с вашего сайта.</p>
+      <p class="print-only">permkvadrat59-star.github.io/tentorium-uae-concept</p>
+    </div>
+    <a class="btn" href="https://permkvadrat59-star.github.io/tentorium-uae-concept/" target="_blank" rel="noopener">Открыть прототип →</a>
+  </div>
+</section>
+
 <!-- ============ 03 ВИЗУАЛ ============ -->
 <section>
   <div class="mod"><b>Модуль 03</b><i></i>Внешний вид</div>
@@ -630,50 +429,62 @@ a{text-decoration:none;color:inherit}
   </div>
 </section>
 
-<!-- ============ 04 СОСТАВ РАБОТ ============ -->
+<!-- ============ 04 ЧТО БЕРЁМ НА СЕБЯ ============ -->
 <section>
-  <div class="mod"><b>Модуль 04</b><i></i>Состав работ</div>
+  <div class="mod"><b>Модуль 04</b><i></i>Что берём на себя</div>
   <div class="head-blk">
-    <h2 class="h-lg">Что делаем</h2>
-    <p class="lede">Прототип согласован, направление по визуалу есть — заходим сразу в реализацию.</p>
+    <h2 class="h-lg">Не сайт,<br>а выход бренда на рынок</h2>
+    <p class="lede">Сайт сам по себе спрос не создаёт — он только принимает тех, кто уже пришёл. Поэтому мы берём не витрину, а весь путь: сделать так, чтобы о бренде узнали, захотели и купили.</p>
   </div>
 
-  <div class="stage">
-    <div class="meta">
-      <b>Этап 1 · Пересборка</b>
-      <div class="price">входит в старт</div>
+  <div class="found">
+    <span class="f-n">Фундамент</span>
+    <div class="f-tx">
+      <b>Пересборка сайта и воронки</b>
+      <p>Витрина, подбор продукта по задаче, локальные способы оплаты, WhatsApp как канал продаж, аналитика и сбор отзывов. Основание, на которое ложится всё остальное, — но само по себе оно не продаёт.</p>
     </div>
-    <ul>
-      <li>Перенос прототипа на Shopify в выбранном визуале</li>
-      <li>Подбор продукта по задаче на реальном каталоге</li>
-      <li>Каталог: скрыть распроданное, предзаказы, чистка категорий</li>
-      <li>Двухуровневые названия для всех доступных SKU</li>
-      <li>Переработка карточек товара</li>
-      <li>WhatsApp: кнопка на всех страницах, click-to-WhatsApp, сценарии</li>
-      <li>Блоки доверия, юрданные, политики доставки и возврата</li>
-      <li>GA4, GTM, Meta и TikTok: события корзины и покупки</li>
-      <li>Дашборд выручки для ежемесячной сверки</li>
-      <li>Арабская версия: ключевые страницы и кнопки</li>
-    </ul>
   </div>
 
-  <div class="stage">
-    <div class="meta">
-      <b>Этап 2 · Привлечение и разгон</b>
-      <span>дальше, непрерывно<br>до первой планки</span>
-      <div class="price">входит в планки</div>
+  <div class="dirs">
+    <div class="dir bet">
+      <span class="d-n">Главная ставка</span>
+      <b>Спортивное направление</b>
+      <p>У бренда есть то, чего нет ни у одного продавца мёда в ОАЭ: исследования на 240 атлетах из 26 дисциплин, международный патент и регистрация как спортивное питание.</p>
+      <p>А в ОАЭ спорт — это массовый рынок: Dubai Fitness Challenge, падел, кроссфит, марафоны, беговые клубы. Заходим туда, где у вас есть доказательства, а у конкурентов их нет.</p>
     </div>
-    <ul>
-      <li>Пересборка привлечения: каналы, связки, креативы</li>
-      <li>Подключение Tabby и Tamara на стороне сайта</li>
-      <li>Оплата при получении + подтверждение заказа в WhatsApp</li>
-      <li>Наборы под задачу и допродажи в корзине</li>
-      <li>Механика сбора отзывов: Judge.me + триггер после доставки</li>
-      <li>Брошенная корзина: e-mail и WhatsApp</li>
-      <li>Порог бесплатной доставки под средний чек</li>
-      <li>Еженедельные правки по данным первых продаж</li>
-    </ul>
+    <div class="dir">
+      <span class="d-n">01</span>
+      <b>Социальные сети</b>
+      <p>Аккаунты @tentorium_mena уже есть, но контент не продаёт. Берём на себя съёмки, контент-план и регулярность под каждую площадку: Instagram, TikTok, YouTube, Snapchat.</p>
+    </div>
+    <div class="dir">
+      <span class="d-n">02</span>
+      <b>Лидеры мнений</b>
+      <p>Wellness, фитнес, материнство, местные эксперты по питанию. Начинаем с микроблогеров и бартера, масштабируем только то, что окупилось по факту заказов.</p>
+    </div>
+    <div class="dir">
+      <span class="d-n">03</span>
+      <b>Арабская аудитория</b>
+      <p>Отдельный канал со своим контентом и трафиком, а не переведённое меню. Половина платёжеспособной аудитории, за которую русскоязычные бренды в ОАЭ почти не борются.</p>
+    </div>
+    <div class="dir">
+      <span class="d-n">04</span>
+      <b>Партнёрства и офлайн</b>
+      <p>Аптеки, wellness-студии, клиники, спортзалы, ивенты и дегустации. В апитерапии живой контакт продаёт лучше любого баннера — и работает на сайт, а не против него.</p>
+    </div>
+    <div class="dir">
+      <span class="d-n">05</span>
+      <b>Платная реклама</b>
+      <p>Meta, TikTok, Google. Включаем после того, как воронка готова принимать трафик: лить бюджет на сайт, где две трети каталога недоступно, — это оплаченный отказ.</p>
+    </div>
+    <div class="dir">
+      <span class="d-n">06</span>
+      <b>Повторные продажи</b>
+      <p>База в WhatsApp, подписка на регулярные товары, допродажи к заказу. Второй заказ от того же человека стоит кратно дешевле первого — именно на нём бизнес начинает зарабатывать.</p>
+    </div>
   </div>
+
+  <p class="fine">Работу по всем направлениям мы ведём в рамках планок. Прямые расходы — рекламный бюджет, гонорары блогеров, производство съёмок, участие в мероприятиях — оплачиваются отдельно и согласуются заранее. Заявления о клинических исследованиях и спортивной регистрации перед запуском рекламы в ОАЭ нужно проверить у местного регуляторного консультанта.</p>
 </section>
 
 <!-- ============ 05 ПОРТФОЛИО ============ -->
